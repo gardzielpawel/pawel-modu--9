@@ -1,14 +1,10 @@
-
-var femaleNames = ['Asia', 'Kasia', 'Ola', 'Jola'];
-var maleNames = ['Piotrek', 'Marek', 'Arek', 'Jarek'];
-var allNames = femaleNames.concat(maleNames);
-
-console.log(allNames);
-
-var newName = 'Marian'; 
-
-if (allNames.indexOf(newName) === -1) {
-  allNames.push(newName);
-} 
-
-console.log(allNames);
+function drawTree(w) {
+	for (var i = 0; i < w; i++) {
+	var star = ' ';
+	
+	for (var j = 0; j <= i; j++) {
+	star += '*';
+	}
+	console.log(star);
+	}
+}
