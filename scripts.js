@@ -1,6 +1,9 @@
-var elements = document.getElementsByClassName("button");
-for (var k = 0; k < elements.length; k++) {
-	alert(elements[k].innerText);
-}
+var list = document.getElementById('list');
+var add = document.getElementById('addElem');
 
-console.log(elements.length);
+add.addEventListener('click', function() {
+	var element = document.createElement('li');
+	var elementTag = document.getElementsByTagName('li');
+	element.innerHTML = 'item ' + elementTag.length;
+	list.appendChild(element);
+});
