@@ -118,16 +118,16 @@ function setGamePoints() {
     computerPointsElem.innerHTML = computer.score;
 }
 
-function endgame()  {
+function endGame()  {
 	if(player.score === 10) {
-	gameState = 'ended'
+	gameState = 'ended';
 	setGameElements();
-	alert('Wygrywa gracz: ' + player.name)
+	alert('Wygrywa gracz: ' + player.name);
 	}
 
 	if(computer.score === 10) {
-	gameState = 'ended'
+	gameState = 'ended';
 	setGameElements();
-	alert('Wygrywa komputer')
+	alert('Wygrywa komputer');
 	}
 }
