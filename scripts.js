@@ -33,7 +33,11 @@ function setGameElements() {
       break;
     case 'ended':
         newGameBtn.innerText = 'Jeszcze raz';
+<<<<<<< HEAD
 	playerPickElem.innerText = 'Player selection';
+=======
+        playerPickElem.innerText = 'Player selection';
+>>>>>>> f709cbfe05ed0b36cc16215fe472a9c0936a7cfe
         computerPickElem.innerText = 'Computer selection';
         playerResultElem.innerText = 'Player score';
         computerResultElem.innerText = 'Computer score';
@@ -52,7 +56,7 @@ var playerPointsElem = document.getElementById('js-playerPoints'),
     computerPointsElem = document.getElementById('js-computerPoints');
 
 function newGame() {
-  player.name = prompt('Please enter your name', 'imiê gracza');
+  player.name = prompt('Please enter your name', 'imiï¿½ gracza');
   if (player.name) {
     player.score = computer.score = 0;
     gameState = 'started';
@@ -98,9 +102,14 @@ function checkRoundWinner(playerPick, computerPick) {
         computer.score++;
     }
 
+<<<<<<< HEAD
 	setGamePoints();
 	endGame();
 
+=======
+    setGamePoints();
+    endGame();    
+>>>>>>> f709cbfe05ed0b36cc16215fe472a9c0936a7cfe
 }
 
 
@@ -118,6 +127,7 @@ function setGamePoints() {
     computerPointsElem.innerHTML = computer.score;
 }
 
+<<<<<<< HEAD
 function endGame()  {
 	if(player.score === 10) {
 	gameState = 'ended';
@@ -130,4 +140,18 @@ function endGame()  {
 	setGameElements();
 	alert('Wygrywa komputer');
 	}
+=======
+function endGame() {
+    if (player.score === 10) {
+        gameState = 'ended';
+        setGameElements();
+        alert('Wygrywa gracz: ' + player.name);
+    }
+
+    if (computer.score === 10) {
+        gameState = 'ended';
+        setGameElements();
+        alert('Wygrywa komputer');
+    }
+>>>>>>> f709cbfe05ed0b36cc16215fe472a9c0936a7cfe
 }
